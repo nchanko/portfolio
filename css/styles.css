@@ -42,7 +42,7 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 189, 93, 56;
+  --bs-primary-rgb: 2, 70, 128;
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
@@ -10959,6 +10959,7 @@ p.lead {
 
 section.resume-section .resume-section-content {
   width: 100%;
+  padding: 2rem;
 }
 
 @media (min-width: 768px) {
