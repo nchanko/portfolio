@@ -10974,4 +10974,13 @@ section.resume-section .resume-section-content {
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
-}/*
+}
+
+.project {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally in the container */
+    justify-content: center; /* Center items vertically in the container */
+    text-align: center; /* Center text */
+    width: 100%; /* Take full width of the container */
+}
