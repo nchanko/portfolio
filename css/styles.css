@@ -10925,12 +10925,12 @@ p.lead {
   }
 }
 .social-icons .social-icon {
+  padding-top: 1.5rem;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  height: 3.5rem;
-  width: 3.5rem;
-  background-color: #495057;
+  height: 1.5rem;
+  width: 1.5rem;
   color: #fff;
   border-radius: 100%;
   font-size: 1.5rem;
