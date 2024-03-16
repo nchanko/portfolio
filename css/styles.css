@@ -9,14 +9,13 @@
  * Copyright 2011-2022 The Bootstrap Authors
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
-:root {
-  --bs-blue: #0d6efd;
-  --bs-indigo: #6610f2;
+ */:root {
+  --bs-blue: #2762b9;
+  --bs-indigo: #020202;
   --bs-purple: #6f42c1;
   --bs-pink: #d63384;
   --bs-red: #dc3545;
-  --bs-orange: #bd5d38;
+  --bs-orange: #fd7e14;
   --bs-yellow: #ffc107;
   --bs-green: #198754;
   --bs-teal: #20c997;
@@ -34,7 +33,7 @@
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
-  --bs-primary: #bd5d38;
+  --bs-primary: #000080; /* Adjusted for Blue */
   --bs-secondary: #6c757d;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
@@ -42,7 +41,7 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 189, 93, 56;
+  --bs-primary-rgb: 13, 110, 253; /* Adjusted for Blue RGB */
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
@@ -73,8 +72,8 @@
   --bs-border-radius-xl: 1rem;
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
-  --bs-link-color: #bd5d38;
-  --bs-link-hover-color: #974a2d;
+  --bs-link-color: #000080; /* Adjusted for Blue */
+  --bs-link-hover-color: darken(#000080, 15%); /* Adjusted for Darker Blue */
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff3cd;
 }
@@ -132,6 +131,7 @@ h1, .h1 {
 
 h2, .h2 {
   font-size: calc(1.475rem + 2.7vw);
+  color: #800000; /* Adjusted for Blue */
 }
 @media (min-width: 1200px) {
   h2, .h2 {
@@ -600,8 +600,9 @@ progress {
 }
 
 .img-fluid {
-  max-width: 100%;
-  height: auto;
+  width: 200px; /* Adjust as needed */
+  height: 200px; /* Adjust as needed */
+  object-fit: cover;
 }
 
 .img-thumbnail {
@@ -7669,7 +7670,8 @@ textarea.form-control-lg {
 }
 
 .mb-5 {
-  margin-bottom: 3rem !important;
+  margin-top: 3rem !important;
+  margin-bottom: 1rem !important;
 }
 
 .mb-auto {
@@ -10944,15 +10946,16 @@ p.lead {
   font-size: 3rem;
 }
 
-section.resume-section {
-  display: flex;
-  align-items: center;
+.section.resume-section {
+  display: flex; /* or keep 'flex' if needed for specific layout reasons */
+  align-items: flex-start; /* Adjusts items to start at the top */
   padding-left: 1rem;
   padding-right: 1rem;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  max-width: 75rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  max-width: 75rem; /* Review if this width fits your design */
 }
+
 section.resume-section .resume-section-content {
   width: 100%;
 }
@@ -10966,7 +10969,7 @@ section.resume-section .resume-section-content {
   section.resume-section {
     padding-left: 3rem;
     padding-right: 3rem;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
-}
+}/*
