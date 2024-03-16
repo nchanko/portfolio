@@ -49,16 +49,35 @@
             <!-- About-->
             <section class="resume-section" id="about">
                 <div class="resume-section-content">
-                    <h1 class="mb-0">
+                    <h1 class="mb-2">
                         Dr.Nyein Chan
                         <span class="text-primary">Ko Ko</span>
                     </h1>
                     <div class="subheading mb-5">
-                        Milwaukee, Wi, US (415) 448 7431 ·
-                        <a class="social-icon" href="mailto:dr.nyeinchankoko@gmail.com">
+                        Milwaukee, WI, US.
+                        <a id="phoneLink" class="social-icon" href="javascript:void(0);" onclick="toggleContact('phoneNumber')">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                        <span id="phoneNumber" style="display:none;">(415) 448-7431</span>
+                    
+                        <a id="emailLink" class="social-icon" href="javascript:void(0);" onclick="toggleContact('emailAddress')">
                             <i class="fas fa-envelope"></i>
                         </a>
+                        <span id="emailAddress" style="display:none;">dr.nyeinchankoko@gmail.com</span>
                     </div>
+                    
+                    
+                    <script>
+                        function toggleContact(contactId) {
+                            var contactElement = document.getElementById(contactId);
+                            if (contactElement.style.display === 'none') {
+                                contactElement.style.display = 'inline';
+                            } else {
+                                contactElement.style.display = 'none';
+                            }
+                        }
+                     
+                    </script>
                     <p class="lead mb-5">
                         As a Medical Doctor with over a decade of experience, my journey has intricately woven through the fields of Information Technology, Data Management, AI, and Healthcare.<br><br>
                         My foundation is built on a blend of formal education in healthcare and self-taught expertise in data and IT, empowering me to devise innovative solutions that address the unique challenges of various organizations, from small startups to large public health bodies.<br><br>
@@ -69,6 +88,8 @@
                 </div>
             </section>
             <hr class="m-0" />
+            
+            
         <!-- Experience -->
         <section class="resume-section" id="experience">
             <div class="resume-section-content">

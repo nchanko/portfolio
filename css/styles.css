@@ -10985,3 +10985,15 @@ section.resume-section .resume-section-content {
     text-align: center; /* Center text */
     width: 100%; /* Take full width of the container */
 }
+
+.subheading.mb-5 {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Adjust the gap as needed */
+}
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
